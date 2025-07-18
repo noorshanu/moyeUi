@@ -1,18 +1,10 @@
 import React from 'react';
-import { FaTelegram, FaTwitter, FaDiscord, FaUsers } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
-const links = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Features', href: '#features' },
-  { name: 'Token', href: '#token' },
-];
+
 
 const socials = [
-  { icon: <FaTelegram />, href: '#', name: 'Telegram' },
-  { icon: <FaTwitter />, href: '#', name: 'Twitter' },
-  { icon: <FaDiscord />, href: '#', name: 'Discord' },
-  { icon: <FaUsers />, href: '#', name: 'Community' },
+  { icon: <FaXTwitter />, href: 'https://x.com/moyememe', name: 'Twitter' },
 ];
 
 const Footer = () => {

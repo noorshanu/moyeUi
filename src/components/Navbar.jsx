@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes, FaRobot } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Features', href: '#features' },
-  { name: 'Token', href: '#token' },
+  { name: 'Tokenomics', href: '#tokenomics' },
 ];
 
 const Navbar = () => {
@@ -39,12 +40,14 @@ const Navbar = () => {
             </motion.a>
           ))}
           <motion.a
-            href="#token"
-            className="ml-4 px-6 py-2 rounded-full font-bold shadow-lg border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
+            href="https://x.com/moyememe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4 px-2 py-2 rounded-full font-bold shadow-lg border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.97 }}
           >
-           Buy $MOYE
+           <FaXTwitter/>
           </motion.a>
         </div>
 
@@ -83,7 +86,7 @@ const Navbar = () => {
               className="mt-2 px-6 py-3 rounded-full font-bold shadow-lg border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
               onClick={() => setMenuOpen(false)}
             >
-              Buy $MOYE
+            <FaXTwitter/>
             </a>
           </motion.div>
         )}

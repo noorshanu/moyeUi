@@ -25,14 +25,18 @@ const CTA = () => {
         >
           Join MOYE and never miss a viral meme again. Get real-time alerts, trending coins, and alpha-packed laughs from across Telegram.
         </motion.p>
-        <motion.a
-          href="#"
-          className="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-2xl shadow-2xl border-2 border-[#7beefc] bg-gradient-to-r from-[#7beefc] to-purple-600 hover:from-purple-600 hover:to-[#7beefc] text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#7beefc] focus:ring-offset-2 animate-glow"
+        <motion.button
+          onClick={() => alert('Coming Soon! 🚀')}
+          className="inline-flex items-center gap-3 px-10 py-5 rounded-full font-bold text-2xl shadow-2xl border-2 border-[#7beefc] bg-gradient-to-r from-[#7beefc] to-purple-600 hover:from-purple-600 hover:to-[#7beefc] text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#7beefc] focus:ring-offset-2 animate-glow group relative"
           whileHover={{ scale: 1.09 }}
           whileTap={{ scale: 0.97 }}
         >
-          Start the Bot <FaTelegram className="ml-1" />
-        </motion.a>
+          <span>Start the Bot</span>
+          <FaTelegram className="ml-1" />
+          <span className="absolute inset-0 flex items-center justify-center bg-gray-900/90 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg font-bold">
+            Coming Soon! 🚀
+          </span>
+        </motion.button>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

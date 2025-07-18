@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowRight, FaTelegram, FaUsers, FaCoins } from 'react-icons/fa';
+import {  FaTelegram } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 const Hero = () => {
   return (
@@ -25,34 +26,30 @@ const Hero = () => {
         
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 w-full">
-          <motion.a
-            href="#cta"
-            className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full font-bold text-base shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
+          <motion.button
+            onClick={() => alert('Coming Soon! 🚀')}
+            className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full font-bold text-base shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1 group relative"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95, y: 0 }}
           >
             <FaTelegram className="text-lg drop-shadow-lg" />
-           Bot
-          </motion.a>
+            <span>Start Bot</span>
+            <span className="absolute inset-0 flex items-center justify-center bg-gray-900/90 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-bold">
+              Coming Soon! 🚀
+            </span>
+          </motion.button>
           
           <motion.a
-            href="#community"
-            className="inline-flex items-center justify-center text-base gap-3 px-6 py-3 rounded-full font-bold shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
+          href="https://x.com/moyememe"
+          target="_blank"
+          rel="noopener noreferrer"
+            className="inline-flex items-center justify-center text-base gap-3 px-6 py-3 rounded-full font-bold shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1 group relative"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95, y: 0 }}
           >
-            <FaUsers className="text-lg drop-shadow-lg" />
-            Community
-          </motion.a>
-          
-          <motion.a
-            href="#token"
-            className="inline-flex items-center justify-center text-base gap-3 px-6 py-3 rounded-full font-bold    shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95, y: 0 }}
-          >
-              <FaCoins className="text-lg drop-shadow-lg" />
-            Buy $MOYE 
+            <FaXTwitter className="text-lg drop-shadow-lg" />
+            <span>Community</span>
+    
           </motion.a>
         </div>
       </motion.div>

@@ -50,7 +50,7 @@ const TokenomicsRoadmap = () => {
   ];
 
   return (
-    <section className="w-full py-24 px-4 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 relative overflow-hidden">
+    <section className="w-full py-24 px-4 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 relative overflow-hidden" id="tokenomics">
       {/* Floating Background Elements */}
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
