@@ -5,8 +5,8 @@ import { FaRobot, FaLock, FaUsers, FaBolt, FaGlobe } from 'react-icons/fa';
 const values = [
   { icon: <FaBolt className="text-blue-400 text-2xl" />, title: 'AI Automation', desc: 'Advanced AI for smarter, faster trading.' },
   { icon: <FaLock className="text-green-400 text-2xl" />, title: 'Security', desc: 'Blockchain-powered, fully decentralized.' },
-  { icon: <FaUsers className="text-purple-400 text-2xl" />, title: 'Community', desc: 'Copy top traders, share strategies, grow together.' },
-  { icon: <FaGlobe className="text-pink-400 text-2xl" />, title: 'Transparency', desc: 'On-chain reputation and open performance.' },
+  // { icon: <FaUsers className="text-purple-400 text-2xl" />, title: 'Community', desc: 'Copy top traders, share strategies, grow together.' },
+  // { icon: <FaGlobe className="text-pink-400 text-2xl" />, title: 'Transparency', desc: 'On-chain reputation and open performance.' },
 ];
 
 const AboutUs = () => {
@@ -22,13 +22,14 @@ const AboutUs = () => {
           className="flex-1 flex flex-col gap-8"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-blue-400 via-green-400 to-purple-400 bg-clip-text text-transparent mb-2">
-            About MetaBotX
+          What is MOYE?
           </h2>
           <h3 className="text-xl md:text-2xl font-semibold text-gray-200 mb-2">
-            Your Ultimate AI Trading Companion
+          Find what's funny before it goes viral.
           </h3>
           <p className="text-lg md:text-xl text-gray-400 mb-2">
-            MetaBotX ($METABOTX) is an AI-powered trading platform and bot marketplace for crypto traders. Automate strategies, backtest ideas, copy top traders, and pay for trading signals—all on-chain, with fully decentralized, crypto-based payments.
+          $MOYE is a Telegram-native meme discovery bot designed to track, filter, and serve you the hottest memes circulating in real time. From underground meme groups to trending coin memes – $MOYE brings you the freshest content with zero effort.
+
           </p>
       
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
@@ -53,7 +54,7 @@ const AboutUs = () => {
           className="flex-1 flex items-center justify-center w-full"
         >
           <img
-            src="/about.jpg"
+            src="/about1.jpg"
             alt="About MetaBotX"
             className="rounded-3xl shadow-2xl w-full max-w-md h-auto object-cover border-4 border-blue-900/30"
           />

@@ -1,48 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaRobot, FaChartLine, FaLock, FaUsers, FaCoins, FaBolt, FaExchangeAlt } from 'react-icons/fa';
-import { SiChainlink, SiBinance, SiEthereum } from 'react-icons/si';
+import {  FaCoins, FaTrophy, FaRss, FaUsers, FaTelegram } from 'react-icons/fa';
+import { GiRadarSweep } from "react-icons/gi";
 
 const features = [
   {
-    icon: <FaRobot className="text-blue-400 text-3xl" />, title: 'AI Trading Bots',
-    desc: 'Automate your crypto trading with advanced AI-powered bots.'
+    icon: <GiRadarSweep className="text-[#7beefc] text-3xl" />, title: 'Meme Radar',
+    desc: 'Real-time scanner of meme trends on Telegram - never miss a viral moment.'
   },
   {
-    icon: <FaChartLine className="text-green-400 text-3xl" />, title: 'Backtesting',
-    desc: 'Test your strategies on historical data before going live.'
+    icon: <FaCoins className="text-[#7beefc] text-3xl" />, title: 'Top Meme Coins',
+    desc: 'Highlights new meme token launches & buzz before they explode.'
   },
   {
-    icon: <FaUsers className="text-purple-400 text-3xl" />, title: 'Copy Top Traders',
-    desc: 'Follow and copy the best performing traders in real time.'
+    icon: <FaTrophy className="text-[#7beefc] text-3xl" />, title: 'Meme Leaderboards',
+    desc: 'Track which memes are going viral fastest with live rankings.'
   },
   {
-    icon: <FaCoins className="text-yellow-400 text-3xl" />, title: 'Crypto Payments',
-    desc: 'Pay and get paid in crypto, instantly and securely.'
+    icon: <FaRss className="text-[#7beefc] text-3xl" />, title: 'Meme Curation Feed',
+    desc: 'Daily dose of high-engagement, top-quality memes curated just for you.'
   },
   {
-    icon: <FaLock className="text-pink-400 text-3xl" />, title: 'On-Chain Security',
-    desc: 'All transactions and reputations are secured on blockchain.'
+    icon: <FaUsers className="text-[#7beefc] text-3xl" />, title: 'Community Submissions',
+    desc: 'Let users submit and vote on memes - the community decides what goes viral.'
   },
   {
-    icon: <FaBolt className="text-indigo-400 text-3xl" />, title: '24/7 Automation',
-    desc: 'Bots never sleep—trade around the clock, hands-free.'
-  },
-  {
-    icon: <SiChainlink className="text-blue-300 text-3xl" />, title: 'Oracle Integration',
-    desc: 'Get real-time, reliable data feeds for smarter trading.'
-  },
-  {
-    icon: <SiBinance className="text-yellow-500 text-3xl" />, title: 'Multi-Exchange',
-    desc: 'Trade on Binance, Coinbase, and more from one platform.'
-  },
-  {
-    icon: <SiEthereum className="text-gray-300 text-3xl" />, title: 'ETH & EVM Support',
-    desc: 'Full support for Ethereum and EVM-compatible chains.'
-  },
-  {
-    icon: <FaExchangeAlt className="text-green-300 text-3xl" />, title: 'Strategy Marketplace',
-    desc: 'Browse, rent, or sell trading strategies with transparent stats.'
+    icon: <FaTelegram className="text-[#7beefc] text-3xl" />, title: '24/7 Bot Monitoring',
+    desc: 'MOYE bot never sleeps - scans Telegram channels around the clock for alpha.'
   },
 ];
 
@@ -55,9 +39,9 @@ const Features = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-r from-blue-400 via-green-400 to-purple-400 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-extrabold text-center mb-10 bg-gradient-to-r from-[#7beefc] via-purple-400 to-pink-400 bg-clip-text text-transparent"
         >
-          Powerful Features
+       Key Features
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -66,7 +50,7 @@ const Features = () => {
           viewport={{ once: true }}
           className="text-xl text-gray-400 text-center max-w-2xl mx-auto mb-16"
         >
-          Everything you need to succeed in crypto trading, powered by AI and secured by blockchain technology.
+          Discover viral memes, trending coins, and alpha-packed laughs from across Telegram – all inside one powerful bot.
         </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((f, i) => (
@@ -76,7 +60,7 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.06, boxShadow: '0 8px 32px 0 rgba(59,130,246,0.15)', borderColor: '#60a5fa', backgroundColor: 'rgba(30,64,175,0.10)' }}
+              whileHover={{ scale: 1.06, boxShadow: '0 8px 32px 0 rgba(123,238,252,0.15)', borderColor: '#7beefc', backgroundColor: 'rgba(123,238,252,0.10)' }}
               className="bg-gray-900/70 border border-gray-800 rounded-2xl p-8 flex flex-col items-start gap-4 shadow-xl transition-all group cursor-pointer"
             >
               <div className="mb-2 group-hover:scale-110 transition-transform">{f.icon}</div>

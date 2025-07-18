@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaTelegram, FaUsers, FaCoins } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id="home" className="w-full min-h-[70vh] px-4 md:px-12 pt-24 pb-12 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 ">
+    <section id="home" className="w-full min-h-[85vh] px-4 md:px-12 pt-24 pb-12 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 ">
       {/* Left: Text Content */}
  <div className='max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 mt-8 '> 
  <motion.div
@@ -13,24 +13,48 @@ const Hero = () => {
         transition={{ duration: 0.7 }}
         className="flex-1 flex flex-col items-start justify-center gap-6 max-w-xl"
       >
-        <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-400 via-green-400 to-purple-400 bg-clip-text text-transparent leading-tight drop-shadow-lg">
-          MetaBotX
+        <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent leading-tight drop-shadow-lg">
+          Meet $MOYE
         </h1>
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-200 mb-2">
-          Your Ultimate AI Trading Companion
+        <h2 className="text-2xl md:text-3xl font-semibold text-white mb-2">
+          The Telegram Bot That Finds All Trending Memes Before Anyone Else
         </h2>
-        <p className="text-lg md:text-xl text-gray-400 mb-2">
-          AI-powered trading platform and bot marketplace for crypto traders.<br/>
-          Automate strategies, backtest ideas, copy top traders, and pay with crypto—all on-chain.
+        <p className="text-lg md:text-xl text-gray-300 mb-6">
+          Discover viral memes, meme coins, and alpha-packed laughs from across Telegram – all inside one powerful bot.
         </p>
-        <motion.a
-          href="#cta"
-          className="inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-lg shadow-xl border-2 border-blue-500 bg-gradient-to-r from-blue-500 to-green-400 hover:from-green-400 hover:to-blue-500 text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-          whileHover={{ scale: 1.07 }}
-          whileTap={{ scale: 0.97 }}
-        >
-          Join the Revolution <FaArrowRight className="ml-1" />
-        </motion.a>
+        
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 w-full">
+          <motion.a
+            href="#cta"
+            className="inline-flex items-center justify-center gap-3 px-6 py-3 rounded-full font-bold text-base shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95, y: 0 }}
+          >
+            <FaTelegram className="text-lg drop-shadow-lg" />
+           Bot
+          </motion.a>
+          
+          <motion.a
+            href="#community"
+            className="inline-flex items-center justify-center text-base gap-3 px-6 py-3 rounded-full font-bold shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95, y: 0 }}
+          >
+            <FaUsers className="text-lg drop-shadow-lg" />
+            Community
+          </motion.a>
+          
+          <motion.a
+            href="#token"
+            className="inline-flex items-center justify-center text-base gap-3 px-6 py-3 rounded-full font-bold    shadow-2xl border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.95, y: 0 }}
+          >
+              <FaCoins className="text-lg drop-shadow-lg" />
+            Buy $MOYE 
+          </motion.a>
+        </div>
       </motion.div>
 
       {/* Right: Image */}
@@ -42,7 +66,7 @@ const Hero = () => {
       >
         <img
           src="/hero.jpg"
-          alt="MetaBotX AI Trading"
+          alt="MOYE Telegram Bot"
           className="rounded-3xl shadow-2xl w-[400px] h-auto object-cover border-4 border-blue-900/30"
         />
       </motion.div>

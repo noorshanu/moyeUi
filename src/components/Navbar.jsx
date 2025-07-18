@@ -14,16 +14,16 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-gray-950/90 border-b border-gray-800 shadow-sm backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-20">
         {/* Logo */}
         <a href="#home" className="flex flex-col items-start justify-center select-none">
           <div className="flex items-center gap-2">
-            <FaRobot className="text-2xl text-blue-400 drop-shadow" />
+          <img src="/logo.jpg" alt="MetaBotX" className="w-16 h-16 rounded-full" />
             <span className="text-xl font-extrabold bg-gradient-to-r from-blue-400 via-green-400 to-purple-400 bg-clip-text text-transparent tracking-tight">
-              MetaBotX
+ MOYE
             </span>
           </div>
-          <span className="text-xs text-gray-400 font-mono tracking-widest ml-7">$METABOTX</span>
+   
         </a>
 
         {/* Desktop Nav Links */}
@@ -39,12 +39,12 @@ const Navbar = () => {
             </motion.a>
           ))}
           <motion.a
-            href="#cta"
-            className="ml-4 px-6 py-2 rounded-full font-bold shadow-lg border-2 border-blue-500 bg-gradient-to-r from-blue-500 to-green-400 hover:from-green-400 hover:to-blue-500 text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            href="#token"
+            className="ml-4 px-6 py-2 rounded-full font-bold shadow-lg border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
             whileHover={{ scale: 1.07 }}
             whileTap={{ scale: 0.97 }}
           >
-            Join the Revolution
+           Buy $MOYE
           </motion.a>
         </div>
 
@@ -80,10 +80,10 @@ const Navbar = () => {
             ))}
             <a
               href="#cta"
-              className="mt-2 px-6 py-3 rounded-full font-bold shadow-lg border-2 border-blue-500 bg-gradient-to-r from-blue-500 to-green-400 text-white text-center"
+              className="mt-2 px-6 py-3 rounded-full font-bold shadow-lg border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
               onClick={() => setMenuOpen(false)}
             >
-              Join the Revolution
+              Buy $MOYE
             </a>
           </motion.div>
         )}

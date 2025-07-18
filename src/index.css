@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+body{
+    background-color: #000000;
+}   
+
+.bg-cta{
+    background-image: url('/bg-h.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
