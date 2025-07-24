@@ -60,7 +60,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95, y: 0 }}
           >
-            <FaXTwitter className="text-lg drop-shadow-lg" />
+           
             <span>Whitepaper</span>
     
           </motion.a>
