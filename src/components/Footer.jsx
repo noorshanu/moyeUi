@@ -4,7 +4,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 
 const socials = [
-  { icon: <FaXTwitter />, href: 'https://x.com/moyememe', name: 'Twitter' },
+  { icon: <FaXTwitter />, href: 'https://x.com/moye_verse?s=21', name: 'Twitter' },
 ];
 
 const Footer = () => {

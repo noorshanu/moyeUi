@@ -40,7 +40,7 @@ const Navbar = () => {
             </motion.a>
           ))}
           <motion.a
-            href="https://x.com/moyememe"
+            href="https://x.com/moye_verse?s=21"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-4 px-2 py-2 rounded-full font-bold shadow-lg border-3 border-blue-900/30 bg-gradient-to-br from-[#7beefc] via-[#5dd8e8] to-[#4ac8d8] hover:from-[#4ac8d8] hover:to-[#7beefc] text-gray-900 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-[#7beefc]/30 focus:ring-offset-2 focus:ring-offset-gray-950 transform hover:-translate-y-1"
