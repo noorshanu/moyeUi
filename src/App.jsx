@@ -13,7 +13,7 @@ const App = () => {
     <div className='bg-black'>
       <Navbar />
       <Hero />
-      <Marque />
+      {/* <Marque /> */}
       <AboutUs />
       <Features />
       <TokenBenefits />
